@@ -1,4 +1,7 @@
 function convertToRoman(num) {
+    if (num === 0) {
+        return ''; //
+    }
     const obj = {
         0: ['M', 1000],
         1: ['CM', 900],
@@ -29,3 +32,4 @@ function convertToRoman(num) {
 console.log(convertToRoman(14)); // Output: XIV
 console.log(convertToRoman(798)); // Output: DCCXCVIII
 console.log(convertToRoman(36)); // Output: XXXVI
+console.log(convertToRoman(0)); // Output: '' (or 'N')
