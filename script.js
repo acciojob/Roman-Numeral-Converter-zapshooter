@@ -26,3 +26,6 @@ function convertToRoman(num) {
     }
     return roman;
 }
+
+// Export the function so it can be required in index.js
+module.exports = convertToRoman;
